@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 .main{
-    /* width: 100vw; */
+    width:1200px;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -21,10 +21,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:url(http://coding.imweb.io/img/project/resume/bg.png);
+    background-image:url(http://coding.imweb.io/img/project/resume/bg.png);
     background-color: #188eee;
-    /* border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; */
     color: #fff;
 }
 .main .main-left .name-item{
