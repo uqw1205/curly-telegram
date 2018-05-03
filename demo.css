@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: row;
 }
+/* 简历左边内容 */
 .main .main-left{
     padding: 50px 0;
     flex: 1;
@@ -28,11 +29,11 @@
 .main .main-left .name-item{
     font-size: 18px;
     text-align: center;
-    
 }
 .main .main-left .left{
     margin-top: 20px;
 }
+/* 头像 */
 .main .main-left .head-png{
     display: inline-block;
     width: 130px;
@@ -42,6 +43,7 @@
     background-size: cover;
     box-shadow: 0 0 0 5px #5db0f3;
 }
+/* hover头像闪烁 */
 @keyframes pngCircle{
     from{
         box-shadow: 0 0 0 #fff;
@@ -58,6 +60,7 @@
     color: #fff;
     text-decoration:none;
 }
+/* 联系方式前icomoon */
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?bkmbvg');
@@ -68,36 +71,37 @@
       font-weight: normal;
       font-style: normal;
     }
-    .main-left .left .icon{
-        font-family: 'icomoon' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1.5;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .main-left .left .email:before{
-        content: "\ea3b";
-    }
-    .main-left .left .phone:before{
-        content: "\ea3c";
-    }
-    .main-left .left .blog:before{
-        content:"\ea3d";
-    }
-    .main-left .left .icon{
-        display: inline-block;
-        vertical-align: middle;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        text-align: center;
-        margin: 5px;
-    }
+.main-left .left .icon{
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.main-left .left .email:before{
+    content: "\ea3b";
+}
+.main-left .left .phone:before{
+    content: "\ea3c";
+}
+.main-left .left .blog:before{
+    content:"\ea3d";
+}
+.main-left .left .icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 5px;
+}
+/* 学历部分 */
 .main-left .study-list{
     width: 320px;
     display: flex;
@@ -113,6 +117,7 @@
     width: 150px;
     line-height: 2;
 }
+/* 简历右侧内容 */
 .main .main-right{
     flex:1;
     background-color:#f5f5f5;
@@ -132,6 +137,7 @@
 .main-right .section{
     position: relative;
 }
+/* 标题旁横线 */
 .main-right h2:after,
 .main-right h2:before{
     content: '';
@@ -145,11 +151,13 @@
 .main-right h2:after{
     right: 0;
 }
+/* 工作经历前渐变线 */
 .main-right .co-list{
     background: linear-gradient(to bottom,#ccc 85%,transparent) no-repeat left top/1px 100%;
     padding-left: 15px;
     position: relative;
 }
+/* 渐变线上闪烁小圆点    hover下闪烁 */
 .main-right .co-list .co-list-item:before{
     content: '';
     display: block;
@@ -201,6 +209,7 @@
     margin-top: 8px;
     margin-bottom: 20px;
 }
+/* hover下技能条animation */
 .main-right .section-bottom .skill-list-item .progress-ps {
     border-radius: 10px;
     height: 8px;
@@ -215,6 +224,7 @@
     animation: proPs 1s ease 1;
     animation-direction: alternate; 
 }
+/* 宽度小于768px   响应式布局 */
 @media(max-width:768px){
     .main{
         flex-direction: column;
@@ -229,7 +239,6 @@
     .main-right .section:last-child{
         margin-top: 40px;
     }
-    
     .main-right .section-bottom{
         margin-top: 15px;
     }
