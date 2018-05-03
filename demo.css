@@ -14,6 +14,12 @@
     display: flex;
     flex-direction: row;
 }
+.disappear{
+    /* display: none; */
+    opacity: 0;
+    position: fixed;
+    top: -100%;
+}
 /* 简历左边内容 */
 .main .main-left{
     padding: 50px 0;
@@ -224,6 +230,24 @@
     animation: proPs 1s ease 1;
     animation-direction: alternate; 
 }
+.canvas1{
+    position: fixed;
+    left: 80px;
+    bottom: 20px;
+    z-index: 10;
+}
+.canvas1:hover{
+    cursor: pointer;
+}
+.canvas2{
+    position: fixed;
+    right: 80px;
+    bottom: 20px;
+    z-index: 10;
+}
+.canvas2:hover{
+    cursor: pointer;
+}
 /* 宽度小于768px   响应式布局 */
 @media(max-width:768px){
     .main{
@@ -242,4 +266,14 @@
     .main-right .section-bottom{
         margin-top: 15px;
     }
+}
+.wrapper{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: aqua;
+    display: none;
+}
+.appear{
+    display: block;
 }
