@@ -248,6 +248,17 @@
 .canvas2:hover{
     cursor: pointer;
 }
+.wrapper{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #ccc;
+    display: none;
+    border-radius: 10px;
+}
+.appear{
+    display: block;
+}
 /* 宽度小于768px   响应式布局 */
 @media(max-width:768px){
     .main{
@@ -266,15 +277,7 @@
     .main-right .section-bottom{
         margin-top: 15px;
     }
-}
-.wrapper{
-    width: 90%;
-    height: 100vh;
-    margin: 0 auto;
-    background-color: #ccc;
-    display: none;
-    border-radius: 10px;
-}
-.appear{
-    display: block;
+    .wrapper{
+        width: 100vw;
+    }
 }
